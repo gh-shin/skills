@@ -7,6 +7,7 @@
 | [audit-app-logic](audit-app-logic/SKILL.md) | 앱 로직 조사·시나리오 검증·수정 검토 |
 | [report-polish](report-polish/SKILL.md) | 한국어 문서를 개조식 보고서로 요약·윤문 |
 | [tech-report](tech-report/SKILL.md) | 기술·평가 보고서, 실험 기록, 설계 결정, 장애 분석의 작성·수정·검토 |
+| [workflow](workflow/SKILL.md) | 모호하거나 다단계인 작업의 인터뷰·목표 합의·실행·검토·재개 |
 
 ## 설치
 
@@ -28,6 +29,9 @@ npx skills add gh-shin/skills --skill report-polish --agent codex
 # audit-app-logic을 Codex에 설치
 npx skills add gh-shin/skills --skill audit-app-logic --agent codex
 
+# workflow를 Codex 프로젝트에 설치
+npx skills add gh-shin/skills --skill workflow --agent codex
+
 # 모든 스킬을 Codex 사용자 범위에 설치
 npx skills add gh-shin/skills --skill '*' --agent codex --global
 ```
@@ -36,6 +40,8 @@ npx skills add gh-shin/skills --skill '*' --agent codex --global
 
 수동 설치가 필요한 경우 스킬 디렉터리 전체를 사용하는 에이전트의 스킬 폴더로 복사하세요. 예를 들어 Codex에서는 `report-polish/`를 `~/.agents/skills/report-polish/`에, `tech-report/`를 `~/.agents/skills/tech-report/`에 복사합니다. `tech-report`는 `references/markdown-html.md`도 함께 포함해야 합니다.
 
+`workflow/`는 `~/.agents/skills/workflow/`에 복사합니다. `SKILL.md`만 복사하지 말고 `agents/`와 `references/`를 포함한 폴더 전체를 유지하세요.
+
 ## 사용 예시
 
 ```text
@@ -43,6 +49,10 @@ $report-polish 아래 글을 사실·수치·조건을 유지하면서 개조식
 
 [원문]
 여기에 정리할 원문을 입력하세요.
+```
+
+```text
+$workflow 신규 서비스 운영 개선안을 구체화해 주세요. 인터뷰로 목표와 성공·실패 기준을 맞추고, 실행·검증 체크리스트를 정리해 주세요.
 ```
 
 이 저장소의 [LICENSE](LICENSE)는 Apache-2.0입니다.
