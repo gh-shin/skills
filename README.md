@@ -4,6 +4,7 @@
 
 | 스킬 | 용도 |
 | --- | --- |
+| [audit-app-logic](audit-app-logic/SKILL.md) | 앱 로직 조사·시나리오 검증·수정 검토 |
 | [report-polish](report-polish/SKILL.md) | 한국어 문서를 개조식 보고서로 요약·윤문 |
 | [tech-report](tech-report/SKILL.md) | 기술·평가 보고서, 실험 기록, 설계 결정, 장애 분석의 작성·수정·검토 |
 
@@ -23,6 +24,9 @@ npx skills add gh-shin/skills --list
 
 # report-polish를 Codex 프로젝트에 설치
 npx skills add gh-shin/skills --skill report-polish --agent codex
+
+# audit-app-logic을 Codex에 설치
+npx skills add gh-shin/skills --skill audit-app-logic --agent codex
 
 # 모든 스킬을 Codex 사용자 범위에 설치
 npx skills add gh-shin/skills --skill '*' --agent codex --global

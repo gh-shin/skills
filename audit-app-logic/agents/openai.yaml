@@ -1,0 +1,6 @@
+interface:
+  display_name: "앱 로직 감사"
+  short_description: "앱 로직 조사·변경 없는 시나리오 실행·수정 검증을 연결"
+  default_prompt: "$audit-app-logic로 실제 호출 경로와 사용자 시나리오를 감사하고, 요청 범위에 따라 조사 보고, 변경 없는 실행 검증 또는 항목별 수정·독립 검토·실행 검증을 진행해줘."
+policy:
+  allow_implicit_invocation: true
